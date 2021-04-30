@@ -167,6 +167,8 @@ resource "aws_instance" "newtech-instance" {
             sudo apt install nginx -y
             sudo systemctl start nginx
             sudo systemctl enable nginx
+            sudo apt install nodejs -y
+            sudo apt install npm -y
             EOF
 
     tags = {
